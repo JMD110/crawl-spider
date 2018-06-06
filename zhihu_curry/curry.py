@@ -11,7 +11,7 @@ headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:60.0) Gecko/20100101 Firefox/60.0'}  # 设置user-agent冒充为浏览器
 feed_url = 'https://www.zhihu.com/search?type=content&q=%E5%BA%93%E9%87%8C'  # 知乎搜索库里后的初始url
 
-client = pymongo.MongoClient(host='47.104.200.195', port=27017)  # 建立MongoDB的连接
+client = pymongo.MongoClient(host='127.0.0.1', port=27017)  # 建立MongoDB的连接
 db = client.curry  # 连接名为curry数据库  如没有该数据库会自动创建该数据库
 
 
